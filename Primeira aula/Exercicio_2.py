@@ -32,9 +32,7 @@ alunos = []
 
 while True:
     print("\n=== CADASTRAR ALUNO ===")
-
     quantidade = int(input("Quantos criterios de notas exixtem nesta sala: "))
-    
     nome = input("Nome do aluno (ou 'sair'): ")
 
     if nome.lower() == "sair":

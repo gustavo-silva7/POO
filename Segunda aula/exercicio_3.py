@@ -14,8 +14,7 @@ Regras
 ContaCorrente:
 ● taxa de saque = 2 reais
 ContaPoupanca:
-● método render_juros()
-"""
+● método render_juros()"""
 
 class ContaBancaria:
     def __init__(self,titular,saldo = 0):
@@ -24,9 +23,7 @@ class ContaBancaria:
     
     def depositar(self, valor):
         if valor <= 0:
-            print("""VALOR INVALIDO!
-                  ola
-                  """)
+            print("VALOR INVALIDO!")
             return
         
         self.saldo += valor

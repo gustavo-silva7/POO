@@ -24,3 +24,24 @@ Reproduzindo vídeo
 Depois crie uma lista com diferentes tipos de arquivos
 e percorra essa lista chamando o método abrir() para cada um.
 """
+
+class Arquivo:
+    def abrir(self):
+        raise NotImplementedError
+    
+class ArquivoTexto(Arquivo):
+    def abrir(self):
+        print("Abrindo arquivo de texto")
+            
+class ArquivoImagem(Arquivo):
+    def abrir(self):
+        print("Abrindo imagem")
+            
+class ArquivoVideo(Arquivo):
+    def abrir(self):
+        print("Reproduzindo video")
+
+arquivos = [ArquivoTexto(), ArquivoImagem(), ArquivoVideo()]
+
+for a in arquivos:
+    a.abrir()

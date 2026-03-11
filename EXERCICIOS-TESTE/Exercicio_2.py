@@ -26,3 +26,24 @@ e uma mensagem e execute o envio.
 
 A função não pode saber qual tipo de notificação está sendo usada.
 """
+
+class Notifica:
+    def enviar_msg(self):
+        raise NotImplementedError
+    
+class Email(Notifica):
+    def enviar_msg(self):
+        print("Envando Email: Olá mundo")
+
+class SMS(Notifica):
+    def enviar_msg(self):
+        print("Envando SMS: Olá mundo")
+
+class PushNotification(Notifica):
+    def enviar_msg(self):
+        print("Envando PUSH: Olá mundo")
+
+notificacao = [Email(), SMS(), PushNotification()]
+
+for n in notificacao:
+    n.enviar_msg()

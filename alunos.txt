@@ -1,0 +1,1 @@
+AlunoTecnico;guto;21/02/2000;python;20260001

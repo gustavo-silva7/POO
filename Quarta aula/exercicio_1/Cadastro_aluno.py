@@ -18,9 +18,7 @@
 from datetime import datetime, date
 import os
 
-
 class Aluno:
-
     contador = 1
 
     def __init__(self, nome, data_nascimento, curso, matricula=None):

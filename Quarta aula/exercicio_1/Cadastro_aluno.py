@@ -89,6 +89,7 @@ def salvar_aluno(aluno):
             f"{tipo};{aluno.nome};{aluno.data_nascimento};{aluno.curso};{aluno.matricula}\n"
         )
 
+        tipo = aluno
 
 def carregar_alunos():
 
